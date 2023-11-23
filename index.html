@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svgLineAniAs</title>
+    <style>
+        body {
+            background-color: #000;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        @keyframes draw {
+            to {
+                stroke-dashoffset:0;
+            
+            }
+        }
+      
+        svg {
+            overflow: visible;
+        }
+        rect {   
+            stroke-dasharray:700; /* 애니메이션의 길이*/         
+            stroke-dashoffset:700; 
+            animation :  draw 2s forwards   }
+
+            .myPath {
+            fill:none;
+            stroke:#FFF;
+            stroke-dasharray:2000; 
+            stroke-dashoffset:2000; 
+            animation: draw 8s infinite;
+        
+        }
+
+    
+    </style>
+</head>
+
+<body>
+            <svg width="299" height="133" viewBox="0 0 299 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="myPath" d="M51 54.5C42.3333 53.3333 21.8 52.7 9 59.5C-7 68 9 41 29 34.5C45 29.3 57.3333 11.6667 61.5 3.49999C65.1667 0.833312 72.1 1.39997 70.5 25C68.5 54.5 93 105.5 68.5 94C44 82.5 37.5 5.49997 81 25C124.5 44.5 235 54 293 9.5C302.5 -1.5 297.5 43 259.5 43.5C264 63.3333 270.3 107.4 259.5 125C246 147 258.5 76.5 245.5 76.5C232.5 76.5 170 103.5 96 88.5C94.6667 100.833 90.9 126.8 86.5 132" stroke="white" stroke-width="3"/>
+                </svg>
+
+                    
+</body>
+
+</html>
